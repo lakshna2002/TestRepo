@@ -2,7 +2,8 @@ Feature: Different result types
   In order to differentiate feature statuses
   As a feature writer
   I need to be able to see different types of test results
-
+  
+  @smoketest
   Scenario: Undefined steps
     Given a file named "features/coffee.feature" with:
       """
