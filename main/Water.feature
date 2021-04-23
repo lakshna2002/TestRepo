@@ -6,7 +6,7 @@ Feature: Water
   Background:
     Given the coffee machine is started
     And I handle everything except the water tank
-
+ @SmokeTest
   Scenario: Message "Fill water tank" is displayed after 50 coffees are taken
     When I take "50" coffees
     Then message "Fill tank" should be displayed
